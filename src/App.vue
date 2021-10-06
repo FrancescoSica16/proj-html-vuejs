@@ -2,12 +2,7 @@
 <template>
   <div id="app">  
 
-  
-     
-        <Header/>
-     
-   
-    
+    <Header/>
 
     <Main/>
 
@@ -41,7 +36,5 @@ export default {
 @import "style/general.scss";
 @import "style/variabiles.scss";
 
-*{
-  margin:0;
-}
+
 </style>

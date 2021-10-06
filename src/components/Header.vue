@@ -1,25 +1,27 @@
 <template>
-  <header class="container">
-    <div class="row">
-      <div id="pre-nav" class="col-10 d-flex justify-content-between">
+  <header>
+    <div class="container">
+      <div class="row">
+        <div id="pre-nav" class="col-12 d-flex justify-content-between">
 
-        <div id="open-hours" class="">
-          <p>Open Hours: Mon - Sat - 9:00-18:00</p>
-        </div>
+          <div id="open-hours" class="d-flex">
+            <div>Open Hours: Mon-Sat - 9:00-18:00</div>
+          </div>
 
-        <div id="contacts" class="d-flex">
-          <div id="numbers" class="d-flex">
-            <i class="fas fa-phone-alt"></i>
-            <p>3318994486</p>
-          </div>
-          <div id="mail" class="d-flex"> 
-            <i class="fas fa-envelope"></i>
-            <p>hello@gmail.com</p>
-          </div>
-          <div id="social">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-linkedin-in"></i>
+          <div id="contacts" class="d-flex ">
+            <div id="numbers" class="d-flex align-items-center ">
+              <i class="fas fa-phone-alt"></i>
+              <div>3318994486</div>
+            </div>
+            <div id="mail" class="d-flex align-items-center"> 
+              <i class="fas fa-envelope"></i>
+              <div>hello@gmail.com</div>
+            </div>
+            <div id="social" class="d-flex align-items-center">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -45,9 +47,25 @@ export default {
 @import "../style/general.scss";
 @import "../style/variabiles.scss";
   
-  #pre-nav{
-    background-color: #1d2528;
-    height: 40px;
-  }
+header{
+  background-color: #1d2528;
+  height: 40px;
+}
 
+#pre-nav{
+  margin: 5px 0;
+}
+
+#pre-nav div, i{
+  color: #bcbdbd;
+  
+}
+
+#pre-nav i{
+    padding-right: 10px;
+}
+
+#contacts div {
+  padding-right: 15px;
+}
 </style>
