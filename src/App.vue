@@ -1,12 +1,12 @@
 
 <template>
-  <div id="app" class="container-fluid">  
+  <div id="app">  
 
-    <div class="row">
-      <div class="col-12">
+  
+     
         <Header/>
-      </div>    
-    </div>
+     
+   
     
 
     <Main/>
