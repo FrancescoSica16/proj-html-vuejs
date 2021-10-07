@@ -1,14 +1,23 @@
 <template>
-  <div>
+  <main>
+    <AdvisoryPerformanceMain/>
 
-  </div>
+    <ResultsInNumbersMain/>
+
+
+  </main>
 </template>
 
 <script>
+import AdvisoryPerformanceMain from "./AdvisoryPerformanceMain.vue";
+import ResultsInNumbersMain from "./ResultsInNumbersMain.vue"
 export default {
   name: "Main",
   props: [],
-
+  components: {
+    AdvisoryPerformanceMain,
+    ResultsInNumbersMain,
+  },
   data: function() {
     return{
       

@@ -3,13 +3,13 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-10 m-auto">
-        <div id="pre-nav" class=" d-flex justify-content-between">
+        <div id="pre-nav" class=" d-flex justify-content-between flex-nowrap">
 
-          <div id="open-hours" class="d-flex">
+          <div id="open-hours" class="d-flex text-nowrap">
             <div>Open Hours: Mon-Sat - 9:00-18:00</div>
           </div>
 
-          <div id="contacts" class="d-flex ">
+          <div id="contacts" class="d-flex flex-nowrap">
             <div id="numbers" class="d-flex align-items-center ">
               <i class="fas fa-phone-alt"></i>
               <div>3318994486</div>
@@ -33,15 +33,16 @@
         <nav class="col-10 m-auto d-flex justify-content-between navbar navbar-expand-lg ">
           <img class="navbar-brand" href="#" src="..\assets\img\nexgen-logo.svg" alt="" > 
 
-          <div class="navbar-nav m-0 d-flex align-items-center">
+          <div class="navbar-nav m-0 d-flex align-items-center flex-nowrap">
             <a v-for="(navItem, index) in headerData" :key="index" class="nav-link" :href="navItem.link">{{navItem.name}}</a>           
             <span><i class="far fa-user" href="#contacts"></i></span>
-            <button>Get in contacts</button>        
+            <button class="btn my_button_primary">GET IN TOUCH</button>        
           </div>    
         </nav>
         
       </div>
     </div>
+   
   </header>
 </template>
 
@@ -66,7 +67,7 @@ export default {
   
 header{
   background-color: #1d2528;
-  height: 40px;
+  
 }
 
 #pre-nav{
@@ -104,7 +105,7 @@ header{
   }
   i{
     color: white;
-    padding-left: 5px ;
+    padding: 0 10px ;
   }
 }
 .nav-link{
