@@ -1,8 +1,9 @@
 <template>
   <header>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div id="pre-nav" class="col-12 d-flex justify-content-between">
+        <div class="col-10 m-auto">
+        <div id="pre-nav" class=" d-flex justify-content-between">
 
           <div id="open-hours" class="d-flex">
             <div>Open Hours: Mon-Sat - 9:00-18:00</div>
@@ -17,26 +18,42 @@
               <i class="fas fa-envelope"></i>
               <div>hello@gmail.com</div>
             </div>
-            <div id="social" class="d-flex align-items-center">
+            <div id="social" class="d-flex align-items-center p-0">
               <i class="fab fa-facebook-f"></i>
               <i class="fab fa-twitter"></i>
-              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-linkedin-in p-0"></i>
             </div>
           </div>
         </div>
       </div>
+      </div>     
     </div> 
+    <div id="jumbotron" class="container-fluid">
+      <div class="row">               
+        <nav class="col-10 m-auto d-flex justify-content-between navbar navbar-expand-lg ">
+          <img class="navbar-brand" href="#" src="..\assets\img\nexgen-logo.svg" alt="" > 
+
+          <div class="navbar-nav m-0 d-flex align-items-center">
+            <a v-for="(navItem, index) in headerData" :key="index" class="nav-link" :href="navItem.link">{{navItem.name}}</a>           
+            <span><i class="far fa-user" href="#contacts"></i></span>
+            <button>Get in contacts</button>        
+          </div>    
+        </nav>
+        
+      </div>
+    </div>
   </header>
 </template>
 
 <script>
+import headerData from "../data/headerData.js";
 export default {
   name: 'Header',
   props: [],
 
   data: function() {
     return{
-      
+      headerData,
     }
   }
 }
@@ -58,6 +75,7 @@ header{
 
 #pre-nav div, i{
   color: #bcbdbd;
+  margin: 0;
   
 }
 
@@ -67,5 +85,32 @@ header{
 
 #contacts div {
   padding-right: 15px;
+}
+
+#jumbotron{
+  background-image: url(../assets/img/bg-2.jpg);
+  background-size: cover;
+  height: 600px;
+}
+.navbar-brand{
+  height: 50px;
+}
+.navbar-nav{
+
+  .nav-link{
+  text-transform: uppercase;
+  color: $textNavFooter;
+  font-weight: 600;
+  }
+  i{
+    color: white;
+    padding-left: 5px ;
+  }
+}
+.nav-link{
+  text-transform: uppercase;
+  color: $textNavFooter;
+  font-weight: 600;
+
 }
 </style>
