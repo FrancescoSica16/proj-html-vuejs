@@ -58,7 +58,7 @@ export default {
 @import "../style/variabiles.scss";
 
 #results{
-    background-image: url(../assets/img/bg-1.jpg);
+    background-image: url(../assets/img/bg-7.jpg);
     height: 500px;
     background-size: cover;
 }

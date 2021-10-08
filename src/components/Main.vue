@@ -4,6 +4,8 @@
 
     <ResultsInNumbersMain/>
 
+    <AdvisoryPerformanceMain/>
+
   </main>
 </template>
 
