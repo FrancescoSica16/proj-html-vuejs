@@ -4,7 +4,6 @@
 
     <ResultsInNumbersMain/>
 
-
   </main>
 </template>
 
