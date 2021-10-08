@@ -2,22 +2,35 @@
     <div class="container">
         <div class="row">
             <div class="col-10 m-auto d-flex justify-content-center  mt-5">
-            
-            <div class="card py-3">
+            <div class="card-contacts ">  
+                <img src="..\assets\img\nexgen-logo.svg" alt="">     
+                <p class="my-4">A functional HTML Template for corporate e business</p> 
+                <div id="numbers" class="d-flex align-items-center ">
+                    <i class="fas fa-phone-alt pe-2"></i>
+                    <div>3318994486</div>
+                </div>
+                <div id="mail" class="d-flex align-items-center"> 
+                    <i class="fas fa-envelope pe-2"></i>
+                    <div>hello@gmail.com</div>
+                </div>
+                <button class="btn my_button_secondary mt-4">GET IN TOUCH</button>
+                   
+            </div>
+            <div class="card py-1">
                 <h3>About</h3>
                 <ul>
                     <FooterCard v-for="(aboutItem, index) in about" 
                     :key="index" :title="aboutItem.name" :rif="aboutItem.link"/>
                 </ul>           
             </div>
-            <div class="card py-3">
+            <div class="card py-1">
                 <h3>Service</h3>
                 <ul>
                     <FooterCard v-for="(serviceItem, index) in service" 
                     :key="index" :title="serviceItem.name" :rif="serviceItem.link"/>
                 </ul>         
             </div>
-               <div class="card py-3">
+               <div class="card py-1">
                    <h3>Support</h3>
                 <ul>
                     <FooterCard v-for="(supportItem, index) in support" 
@@ -131,7 +144,16 @@ export default {
 <style scoped lang="scss">
 @import "../style/general.scss";
 @import "../style/variabiles.scss";
+.card-contacts{
+    width: calc(100% /3);
+    background-color: transparent;
+    margin: 0 10px;
+    color: $textNavFooter;
 
+    & img{
+        width: 70%;
+    }
+}
 .card{
     width: calc(100% /4);
     background-color: #ffffff10;
