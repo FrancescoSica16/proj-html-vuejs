@@ -43,7 +43,7 @@
       </div>
       <div class="jumbo-inside"></div>
       <div>colore</div>
-      <div>colore</div>
+     
     </div>
    
   </header>
