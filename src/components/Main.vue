@@ -4,20 +4,23 @@
 
     <ResultsInNumbersMain/>
 
-    <AdvisoryPerformanceMain/>
+    <ServiceMain/>
 
   </main>
 </template>
 
 <script>
 import AdvisoryPerformanceMain from "./AdvisoryPerformanceMain.vue";
-import ResultsInNumbersMain from "./ResultsInNumbersMain.vue"
+import ResultsInNumbersMain from "./ResultsInNumbersMain.vue";
+import ServiceMain from "./ServiceMain.vue";
+
 export default {
   name: "Main",
   props: [],
   components: {
     AdvisoryPerformanceMain,
     ResultsInNumbersMain,
+    ServiceMain,
   },
   data: function() {
     return{

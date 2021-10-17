@@ -58,9 +58,12 @@ export default {
 @import "../style/variabiles.scss";
 
 #results{
-    background-image: url(../assets/img/bg-7.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url(../assets/img/news-2.jpg)  ;
+    
     height: 500px;
     background-size: cover;
+    background-position: bottom;
+   
 }
 #results-value{
     font-weight: 700;
